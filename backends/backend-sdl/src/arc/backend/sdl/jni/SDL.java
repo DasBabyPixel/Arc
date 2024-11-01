@@ -233,6 +233,14 @@ public class SDL{
         wh[1] = h;
     */
 
+    public static native void SDL_GetWindowPosition(long handle, int[] xy); /*
+        int x = 0;
+        int y = 0;
+        SDL_GetWindowPosition((SDL_Window*)handle, &x, &y);
+        xy[0] = x;
+        xy[1] = y;
+    */
+
     public static native void SDL_SetWindowPosition(long handle, int x, int y); /*
         SDL_SetWindowPosition((SDL_Window*)handle, x, y);
     */
