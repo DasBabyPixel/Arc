@@ -225,6 +225,14 @@ public class SDL{
         SDL_SetWindowSize((SDL_Window*)handle, w, h);
     */
 
+    public static native void SDL_GetWindowSize(long handle, int[] wh); /*
+        int w = 0;
+        int h = 0;
+        SDL_GetWindowSize((SDL_Window*)handle, &w, &h);
+        wh[0] = w;
+        wh[1] = h;
+    */
+
     public static native void SDL_SetWindowPosition(long handle, int x, int y); /*
         SDL_SetWindowPosition((SDL_Window*)handle, x, y);
     */
